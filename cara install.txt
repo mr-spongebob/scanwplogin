@@ -1,0 +1,6 @@
+git clone https://github.com/mr-spongebob/scanwplogin
+cd scanwplogin
+pip install requests
+pip install beautifulsoup4
+pip install colorama
+python3 scan1.py list.txt
