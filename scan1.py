@@ -11,9 +11,9 @@ init(autoreset=True)
 print(Fore.GREEN + '''
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┏
 ┇    Scan wp-login untuk brute force [Wordpress]  ┇
-┇        Created by mr.spongebob                  ┇
+┇        Created by Mr.Spongebob                  ┇
 ┇        Email : kangpepes@protonmail.com         ┇
-         visit : www.sukabumiblackhat.com         ┇                      
+┇         visit : www.sukabumiblackhat.com        ┇                       
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 ''')
