@@ -1,4 +1,3 @@
-#recode tanpa author?you nub!!
 import os
 import requests
 import sys
@@ -13,17 +12,14 @@ print(Fore.GREEN + '''
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┏
 ┇    Scan wp-login untuk brute force [Wordpress]  ┇
 ┇        Created by mr.spongebob                  ┇
-┇                                                 ┇
+┇        Email : kangpepes@protonmail.com         ┇
+         visit : www.sukabumiblackhat.com         ┇                      
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-########################################
-# Email : kangpepes@protonmail.com     #
-# visit : www.sukabumiblackhat.com     #
-########################################
 ''')
 
 
-excluded_subdomains = ['webmail', 'mail', 'www','sso', 'cpcalendars', 'cpanel', 'api', 'cpcontacts', 'ns1', 'ns2']
+excluded_subdomains = ['webmail', 'mail','webdisk', 'www','sso','ojs','ojs1','ojs2','cloud','dev', 'cpcalendars', 'cpanel', 'api', 'cpcontacts', 'ns1', 'ns2']
 
 
 def check_wp_login(domain, output_file):
@@ -46,7 +42,7 @@ def check_wp_login(domain, output_file):
                 soup = BeautifulSoup(response.text, 'html.parser')
                 title = soup.title.string if soup.title else ''
                 
-                if title and ('login' in title.lower() or 'log masuk' in title.lower()):
+                if title and ('asas' in title.lower() or 'log masuk' in title.lower()):
                     print(Fore.GREEN + f"Found: {url_http + '/wp-login.php'} Title: {title}")
                     
                     with open(output_file, 'a') as outfile:
@@ -65,7 +61,7 @@ def check_wp_login(domain, output_file):
                 soup = BeautifulSoup(response.text, 'html.parser')
                 title = soup.title.string if soup.title else ''
                 
-                if title and ('login' in title.lower() or 'log masuk' in title.lower()):
+                if title and ('asassa' in title.lower() or 'log masuk' in title.lower()):
                     print(Fore.GREEN + f"Found: {url_https + '/wp-login.php'}  Title: {title}")
                     
                     with open(output_file, 'a') as outfile:
