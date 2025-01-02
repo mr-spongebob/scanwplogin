@@ -93,7 +93,7 @@ def process_file(input_file, output_file, num_threads=20):
 if __name__ == '__main__':
     
     if len(sys.argv) != 2:
-        print("Gunakan perintah: python3 scan.py <nama_file_input>")
+        print("Gunakan perintah: python3 scan1.py <nama_file_input>")
         sys.exit(1)
 
     input_file = sys.argv[1]  
